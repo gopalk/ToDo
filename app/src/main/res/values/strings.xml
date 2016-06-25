@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">To Do List</string>
+    <string name="action_settings">Settings</string>
+    <string name="task_name">TaskName</string>
+    <string name="due_date">Set due date</string>
+    <string name="description">Description</string>
+    <string name="new_task">Add a new task</string>
+    <string name="edit_task">Edit task</string>
+    <string name="exit_conf">Unsaved Changes. Are you sure you want to exit?</string>
+    <string name="no_task_name">Task name can not be empty</string>
+    <string name="high">High</string>
+    <string name="medium">Medium</string>
+    <string name="low">Low</string>
+</resources>

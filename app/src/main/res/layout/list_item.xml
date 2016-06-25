@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/priority"
+            android:layout_width="7dp"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"/>
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:id="@+id/del_cb"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:gravity="center_vertical"
+            android:minHeight="?android:attr/listPreferredItemHeightSmall"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:gravity="center_vertical"
+            android:fontFamily="sans-serif"
+            android:id="@+id/due_date"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:textColor="@color/due_date_gray"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/strikethrough"
+        android:id="@+id/strike_through"
+        android:visibility="invisible">
+    </FrameLayout>
+</RelativeLayout>
